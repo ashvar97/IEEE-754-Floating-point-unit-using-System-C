@@ -78,8 +78,6 @@ Contributions are welcome! To contribute:
 
 For major changes, please open an issue first to discuss your proposed modifications.
 
-## License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
 
 ---
 **Author**: Ashwin Varkey  
