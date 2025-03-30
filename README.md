@@ -10,21 +10,20 @@ This project presents a **SystemC-based implementation** of an **IEEE 754 compli
 - **Exception Handling**: Detects and manages conditions such as **overflow**, **underflow**, **division by zero**, and **invalid operations**.
 - **Rounding Modes**: Incorporates multiple rounding modes, including **nearest-even**, **toward zero**, **toward positive infinity**, and **toward negative infinity**.
 
+
 ## Repository Structure
 
-Copy
-├── .DS_Store                     # macOS directory metadata (auto-generated, ignore)
-├── .gitattributes                # Git configuration for line endings and file types
-├── Addition_Final.cpp            # Core 32-bit floating-point addition implementation
-├── Addition_check.cpp            # Verification testbench for addition operation
-├── Division_Final.cpp            # IEEE 754 compliant division implementation  
-├── Division_check.cpp            # Division unit test with edge cases  
-├── Multiplication_Final.cpp      # Floating-point multiplier with rounding support  
-├── Multiplication_check.cpp      # Multiplier validation with exhaustive tests  
-├── Subtract_Final.cpp            # Accurate floating-point subtraction module  
-├── Verilog/                      # Optional RTL implementations (VHDL available)  
-└── README.md                     # Project documentation and usage guide  
-Key features:
+├── .DS_Store                     # macOS directory metadata  
+├── .gitattributes                # Git configuration file  
+├── Addition_Final.cpp            # IEEE 754 floating-point addition implementation  
+├── Addition_check.cpp            # Testbench for addition operation verification  
+├── Division_Final.cpp            # Floating-point division implementation  
+├── Division_check.cpp            # Division operation test cases  
+├── Multiplication_Final.cpp      # Floating-point multiplier core  
+├── Multiplication_check.cpp      # Multiplier verification testbench  
+├── Subtract_Final.cpp            # Floating-point subtraction implementation  
+├── Verilog/                      # RTL implementations (if applicable)  
+└── README.md                     # Project documentation  
 
 ## Compilation & Usage
 
