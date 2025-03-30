@@ -1,7 +1,7 @@
 # IEEE 754 Floating-Point Unit using SystemC
 
 ## Overview
-This project presents a **SystemC-based implementation** of an **IEEE 754 compliant Floating-Point Unit (FPU)**. The FPU supports fundamental arithmetic operations—**addition, subtraction, multiplication, and division**—for both **single-precision (32-bit)** and **double-precision (64-bit)** floating-point numbers. Designed for hardware-accurate simulations, this module facilitates the integration and verification of floating-point arithmetic in digital systems.
+This project presents a **SystemC-based implementation** of an **IEEE 754 compliant Floating-Point Unit (FPU)**. The FPU supports fundamental arithmetic operations—**addition, subtraction, multiplication, and division**—for both **single-precision (32-bit)** floating-point numbers. Designed for hardware-accurate simulations, this module facilitates the integration and verification of floating-point arithmetic in digital systems.
 
 ## Features
 - **Arithmetic Operations**: Supports **addition**, **subtraction**, **multiplication**, and **division** operations.
@@ -11,18 +11,26 @@ This project presents a **SystemC-based implementation** of an **IEEE 754 compli
 - **Rounding Modes**: Incorporates multiple rounding modes, including **nearest-even**, **toward zero**, **toward positive infinity**, and **toward negative infinity**.
 
 ## Repository Structure
-```
-📂 IEEE-754-Floating-point-unit-using-System-C
-├── Addition_Final.cpp          # Implementation of floating-point addition
-├── Addition_check.cpp          # Testbench for floating-point addition
-├── Division_Final.cpp          # Implementation of floating-point division
-├── Division_check.cpp          # Testbench for floating-point division
-├── Multiplication_Final.cpp    # Implementation of floating-point multiplication
-├── Multiplication_check.cpp    # Testbench for floating-point multiplication
-├── Subtract_Final.cpp          # Implementation of floating-point subtraction
-├── README.md                   # Project documentation
-└── .gitattributes              # Git attributes configuration
-```
+
+Copy
+├── .DS_Store                     # macOS directory metadata (auto-generated, ignore)
+├── .gitattributes                # Git configuration for line endings and file types
+├── Addition_Final.cpp            # Core 32-bit floating-point addition implementation
+├── Addition_check.cpp            # Verification testbench for addition operation
+├── Division_Final.cpp            # IEEE 754 compliant division implementation  
+├── Division_check.cpp            # Division unit test with edge cases  
+├── Multiplication_Final.cpp      # Floating-point multiplier with rounding support  
+├── Multiplication_check.cpp      # Multiplier validation with exhaustive tests  
+├── Subtract_Final.cpp            # Accurate floating-point subtraction module  
+├── Verilog/                      # Optional RTL implementations (VHDL available)  
+└── README.md                     # Project documentation and usage guide  
+Key features:
+
+## Compilation & Usage
+
+1. Install SystemC dependencies:  
+   ```bash
+   sudo apt install systemc-dev  # Ubuntu/Debian
 
 ## Getting Started
 ### Prerequisites
@@ -54,32 +62,6 @@ This project presents a **SystemC-based implementation** of an **IEEE 754 compli
 - **Verification**: Utilize the provided testbenches (`*_check.cpp`) to verify the correctness of each arithmetic operation.
 - **Customization**: Modify the modules to support additional operations or to optimize performance for specific applications.
 
-## Contributing
-Contributions are welcome! To contribute:
-1. **Fork the Repository**.
-2. **Clone Your Fork**:
-   ```bash
-   git clone https://github.com/your-username/IEEE-754-Floating-point-unit-using-System-C.git
-   ```
-3. **Create a New Branch**:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-4. **Make Your Changes**.
-5. **Commit Changes**:
-   ```bash
-   git commit -am 'Add new feature: your-feature-name'
-   ```
-6. **Push to Your Fork**:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-7. **Submit a Pull Request**.
-
-For major changes, please open an issue first to discuss your proposed modifications.
-
-
----
 **Author**: Ashwin Varkey  
 **Contact**: [ashvar97@gmail.com](mailto:ashvar97@gmail.com) | [LinkedIn](https://www.linkedin.com/in/ashvar97/)
 
