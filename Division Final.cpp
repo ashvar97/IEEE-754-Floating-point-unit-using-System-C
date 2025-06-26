@@ -74,6 +74,7 @@ SC_MODULE(ComputeModule) {
                     r = r | 1;
                 }
                 x_val = x_val << 1;
+wait()
             }
 
             sticky = (x_val != 0);
